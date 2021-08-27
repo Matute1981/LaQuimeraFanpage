@@ -19,6 +19,9 @@ h3{
     font-weight: bold;
     color: $blanco;
 }
+h4{
+    @extend h3
+}
 p{
     color: $p;
     text-align: center;
@@ -29,7 +32,6 @@ table{
     text-align: center;
 }
 article{
-    // display: inline-block;
     border: $gris;
     width: 32%;
     height: 32%;
