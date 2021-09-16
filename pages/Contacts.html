@@ -12,13 +12,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <title>Contact Us - La Quimera Rock&Roll Band</title>
+    <title>Contacto - La Quimera Rock&Roll Band</title>
 </head>
 <body class="body--fondo">
-    <!-----Header Navbar----->
+
+<!-----Header Navbar----->
+
     <nav class="navbar navbar-expand-lg navbar-dark border-bottom">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img src="../galery/Logo2.jpg" alt="LaQuimera"></a>
+            <a class="navbar-brand" href="../index.html"><img src="../galery/Logo2.jpg" alt="Inicio"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -26,121 +28,184 @@
 
             <div class="navbar-nav justify-content-evenly w-100">
             
-                <a class="nav-link active" aria-current="page" href="Galery.html">Galery <span class="badge bg-secondary" id="link__nav--style">Nuevo</span> </a>
+                <a class="nav-link active" aria-current="page" href="Galery.html">Galería <span class="badge bg-secondary" id="link__nav--style">Nuevo</span> </a>
             
-                <a class="nav-link" href="News.html">New's</a>
+                <a class="nav-link" href="News.html">Noticias</a>
             
-                <a class="nav-link" href="Discography.html">Discography</a>
+                <a class="nav-link" href="Discography.html">Discografía</a>
             
-                <a class="nav-link" href="Music_Video.html">Music Video</a>
+                <a class="nav-link" href="Music_Video.html">Videos</a>
             
             </div>
         </div>
         </div>
     </nav>
 
-    <!-------Main-------->
+<!-------Formulario de Registro-------->
 
-<div class="col-12">
+<main class="container-fluid">
 
-    <h1><span class="negrita">Suscribe</span> & be in toch with us</h1>
-            <h2>Registrarme</h2>
-        <form action="" method="get"></form>
-            <ul class="formulario">
-            <label for="">Nombre </label>
-                <input type="text" placeholder="Nombre">
-            <label for="">Apellido </label>
-                <input type="text" placeholder="Apellido">
-            <label for="">Edad </label>    
-                <input type="number" placeholder="Edad" value="">
-            <label for="">Provincia</label>
-            <select name="" id="">
-                <option value="">Ciudad Autónoma Buenos Aires</option>
-                <option value="">Buenos Aires</option>
-                <option value="">Córdoba</option>
-                <option value="">Santa Fé</option>
-                <option value="">Entre Ríos</option>
-                <option value="">Jujuy</option>
-                <option value="">Salta</option>
-                <option value="">Misiones</option>
-                <option value="">Neuquen</option>
-                <option value="">San Luis</option>
-                <option value="">San Juan</option>
-                <option value="">Santiago del Estero</option>
-                <option value="">La Rioja</option>
-                <option value="">Tucumán</option>
-                <option value="">Corrientes</option>
-                <option value="">Formosa</option>
-                <option value="">Chaco</option>
-                <option value="">Mendoza</option>
-                <option value="">La Pampa</option>
-                <option value="">Santa Cruz</option>
-                <option value="">Río Negro</option>
-                <option value="">Chubut</option>
-                <option value="">Tierra del Fuego</option>
-            </select>
-            <label for="">E-mail</label>
-                <input type="email" placeholder="example@example.com">
-            <label for="">Contraseña</label>
-                <input type="password" id="" placeholder="**********">
-            <label for="">Recibir el Newsletter</label>
-                <input type="radio" name="newsletter">Sí
-                <input type="radio" name="newsletter">No
-                <input type="checkbox" name="">Acepto las condiciones de privacidad
-                <button type="submit">Enviar</button>
-                <button type="reset">Borrar</button>
-            </ul>
-</div>
+    <div class="col-12">
+        <h1 class="display-1">Contacta con <span class="titulo__negrita">La Quimera</span></h1>
+        <div class="col-12 d-flex justify-content-center container">
+            <form class="row g-3">
+
+<!-------- Nombre / Apellido ----->
+
+                <div class="col-9">
+                    <label for="validationDefault01" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Nombre" id="validationDefault01" value="" required>
+                </div>
+                <div class="col-9">
+                    <label for="validationDefault02" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" placeholder="Apellido" id="validationDefault02" value="" required>
+                </div>
+
+<!------- Casilla de mail ----->
+
+                <div class="col-9">
+                    <label for="validationDefaultUsername" class="form-label">E-mail</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                    <input type="text" class="form-control" placeholder="name@example.comm" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" value="" required>
+                </div>
+                </div>
+
+<!------ Ciudad ----->
+
+                <div class="col-9">
+                    <label for="validationDefault03" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="validationDefault03" required>
+                </div>
+
+<!----- Selección de Provincia ----->
+
+                <div class="col-9">
+                    <label for="validationDefault04" class="form-label">Provincia</label>
+                    <select class="form-select" id="validationDefault04" required>
+                        <option selected disabled value="">...</option>
+                        <option value="">Ciudad Autónoma Buenos Aires</option>
+                        <option value="">Buenos Aires</option>
+                        <option value="">Córdoba</option>
+                        <option value="">Santa Fé</option>
+                        <option value="">Entre Ríos</option>
+                        <option value="">Jujuy</option>
+                        <option value="">Salta</option>
+                        <option value="">Misiones</option>
+                        <option value="">Neuquen</option>
+                        <option value="">San Luis</option>
+                        <option value="">San Juan</option>
+                        <option value="">Santiago del Estero</option>
+                        <option value="">La Rioja</option>
+                        <option value="">Tucumán</option>
+                        <option value="">Corrientes</option>
+                        <option value="">Formosa</option>
+                        <option value="">Chaco</option>
+                        <option value="">Mendoza</option>
+                        <option value="">La Pampa</option>
+                        <option value="">Santa Cruz</option>
+                        <option value="">Río Negro</option>
+                        <option value="">Chubut</option>
+                        <option value="">Tierra del Fuego</option>
+                    </select>
+                </div>
+
+<!---- Casilla de Mensaje ---->
+
+                <div class="row">
+                    <div class="col-md-12 md-form">
+                        <label for="validationDefault05" class="form-label">Mensaje</label>
+                        <textarea type="text" id="message" name="message" rows="10" class="form-control md-textarea" placeholder="Dejanos tu mensaje"></textarea>
+                    </div>
+                </div>
+
+<!---- Check Condiciones ---->
+
+                <div class="col-12 w-50 h-75">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">Acepto las condiciones de privacidad</label>
+                    </div>
+
+<!--- Botones de envio y borrado --->
+
+                    <div class="col-12 text-start">
+                    <button class="btn btn-outline-secondary btn-sm m-5" type="submit" name="send">Enviar</button>
+                    <button class="btn btn-outline-secondary btn-sm m-5" type="reset" name="reset">Borrar</button>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</main>
 
 <!----Footer----->
-<footer class="container-fluid">
-    <div class="container-fluid border-bottom p-5">
 
+<footer class="container-fluid my-3">
+    <div class="container border-bottom p-5">
         <div class="row c-blanco d-flex justify-content-evenly align-items-center">
 
-            <div class="col-12 col-lg-4 d-flex flex-column justify-content-evenly align-items-center d-lg-inline">
+<!-- Mapa del Sitio -->
 
-                <img class="w-25 w-lg-50 m-3 footer__logo--borde text-center" src="../galery/Logo.jpg" alt="">
-
-                <p class="col-12 col-lg-4">Matías Lamperti © 2021, Todos los derechos reservados.</p>
-
-                <p class="col-12 col-lg-4">matiasnlamperti@gmail.com</p>
-
+            <div class="d-flex col-12 col-lg-4 my-6 p-3 text-center align-items-center justify-content-center">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Mapa del Sitio</button>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item mapa__sitio--letra" href="../index.html">Inicio</a></li>
+                            <li><a class="dropdown-item mapa__sitio--letra" href="Galery.html">Galería <span class="badge bg-secondary" id="link__nav--style">Nuevo</span></a></li>
+                            <li><a class="dropdown-item mapa__sitio--letra" href="News.html">Noticias</a></li>
+                            <li><a class="dropdown-item mapa__sitio--letra" href="Discography.html">Discografía</a></li>
+                            <li><a class="dropdown-item mapa__sitio--letra" href="Music_Video.html">Videos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item mapa__sitio--letra" href="Contacts.html">Contacto</a></li>
+                        </ul>                        
+                    <div class="column">
+                        <img class="w-25 w-lg-50 m-3 footer__logo--borde text-center" src="../galery/Logo.jpg" alt="DW Lamperti">
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-lg-4 ">
 
-                <h3 class="col-12 text-center  align-content-center">Encontranos en nuestras Redes</h3>
+<!-- RS -->
 
-                <div class="col-12 col-lg-4 d-flex flex-row justify-content-around justify-content-lg-evenly w-100">
-
-                <a class="footer__link--side" href="https://es-la.facebook.com/laquimerarockandroll/" target="blanc"><img src="../logo_redes/i-facebook.svg"></a>
-    
-                <a class="footer__link--side" href="https://www.instagram.com/laquimerarnr/" target="blanc"><img src="../logo_redes/i-instagram.svg"></a>
-    
-                <a class="footer__link--side" href="https://www.youtube.com/channel/UCoEqB9ldWlaWHMZHh31FhjA" target="blanc"><img src="../logo_redes/i-youtube.svg"></a>
-                
-
-            </div>
-            </div>
-    
             <div class="col-12 col-lg-4 my-6 p-3">
+                <h3 class="col-12 text-center align-content-center">Encontranos en nuestras Redes</h3>
+                    <div class="col-12 col-lg-4 d-flex flex-row justify-content-around justify-content-lg-evenly w-100">
+                        <a class="footer__link--side" href="https://es-la.facebook.com/laquimerarockandroll/" target="blanc"><img src="../logo_redes/i-facebook.svg"></a>
+                        <a class="footer__link--side" href="https://www.instagram.com/laquimerarnr/" target="blanc"><img src="../logo_redes/i-instagram.svg"></a>
+                        <a class="footer__link--side" href="https://www.youtube.com/channel/UCoEqB9ldWlaWHMZHh31FhjA" target="blanc"><img src="../logo_redes/i-youtube.svg"></a>
+                    </div>
+            </div>
+
+<!-- Newsletter -->
+
+            <div class="col-12 col-lg-4 my-6 p-3">
+                <h4 class="col-12 my-3 text-center text-lg-start">Suscribite al Newsletter</h4>
+                <form action="get" class="row col-12 text-center d-flex justify-content-center">
+                    <div class="col-12">
+                        <input type="email" class="form-control mx-5 mx-lg-0" id="exampleFormControlInput1" placeholder="name@example.com"/>
+                    </div>
+                    <div class="col-12 my-1 mx-4 mx-md-0 mx-lg-0" >
+                        <button  type="submit" class="btn btn-outline-secondary btn-sm">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+<!-- Firma al pie -->
+
+            <div class="row d-flex col-12 flex-row justify-content-evenly align-items-center d-lg-inline">
                 
-                <a class="col-12 my-3 text-center" href="../pages/Contacts.html">Contact Us</a>
-
-                <h3>Mapa del Sitio</h3>
-                    <a class="col-12 my-1 mapa__sitio--letra" href="../index.html">Home</a>
-
-                    <a class="col-12 my-1 mapa__sitio--letra" href="../pages/Galery.html">Galery <span class="badge bg-secondary" id="link__nav--style">Nuevo</span></a>
-
-                    <a class="col-12 my-1 mapa__sitio--letra" href="../pages/News.html">New's</a>
-
-                    <a class="col-12 my-1 mapa__sitio--letra" href="../pages/Discography.html">Discography</a> 
-
-                    <a class="col-12 my-1 mapa__sitio--letra" href="../pages/Music_Video.html">Music Video</a>
-
-            </div>           
+                <p class="col-12">Matías Lamperti © 2021, Todos los derechos reservados.</p>
+                <p class="col-12">matiasnlamperti@gmail.com</p>
+            </div>
         </div>
     </div>
 </footer>
+
+<!-- Script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
 </body>
 </html>

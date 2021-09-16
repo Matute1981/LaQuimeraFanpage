@@ -11,12 +11,6 @@
     height: 100%;
     width: 100%;}
 }
-    
-input{
-    &:focus{
-    width: 30%;
-    font-size: 2rem;}
-}
 a{
     &:hover{
         transform: scale(2);
